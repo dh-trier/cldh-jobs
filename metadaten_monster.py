@@ -22,7 +22,10 @@ def get_metadata(html):
     text = re.sub('<script(.*?)>', "", text)
     y = json.loads(text)
     
-    id = "monster_" + datetime.datetime.now().strftime('%d%m%y%H%M%S%f')   # monster_ + timestamp im Format Tag-Monat-Jahr-Stunde-Minute-Sekunden-Mikrosekunden
+    from generate_timestamp import timestamp
+    timestamp = timestamp()
+    
+    id = "monster_" + timestamp   # monster_ + timestamp im Format Tag-Monat-Jahr-Stunde-Minute-Sekunden-Mikrosekunden
     title = str(y["title"])
     employer = str(y["identifier"]["name"])
     place = str(y["jobLocation"]["address"]["addressLocality"])

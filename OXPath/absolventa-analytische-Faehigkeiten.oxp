@@ -1,0 +1,5 @@
+doc('https://www.absolventa.de/stellenangebote?button=&query%5Blocation%5D=&query%5Btext%5D=analytische+Fähigkeiten')
+/(//following::*[@id='p_job_offers_index']//*[@class='next']/{click /})*{0,99}
+//*[@class='job-offer-teasers']/a:<analytische-Faehigkeiten>
+[.//h2:<title=normalize-space(.)>]
+[.:<url=qualify-url(@href)>]

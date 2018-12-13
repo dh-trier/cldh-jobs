@@ -1,0 +1,6 @@
+doc('https://dhd-blog.org/?cat=3', [wait=2])
+      /(//*[@class='pagination']//*[contains(@class, 'next')]/{click /})*{0}
+
+      //*[@class='article']//*[@class='heading-holder']:<dhd-blog_ohne_keyword>
+        [./h2/a:<title=normalize-space(.)>]
+        [./h2/a:<url=qualify-url(@href)>]

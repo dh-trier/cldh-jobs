@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 
 """
-Script for getting metadata from advertisements of openbiblio (https://jobs.openbiblio.eu/) using BeautifulsSoup and json module.
+Script for getting metadata from advertisements of openbiblio (https://jobs.openbiblio.eu/) using BeautifulsSoup.
 See: https://www.crummy.com/software/BeautifulSoup/bs4/doc/
-https://docs.python.org/2/library/json.html
 
 """
 
@@ -12,9 +11,8 @@ https://docs.python.org/2/library/json.html
 from bs4 import BeautifulSoup as bs
 import glob
 import re
-import json
-import os
 from os.path import join
+import os
 
 
 # === Parameters ===
@@ -35,32 +33,47 @@ def read_html(file):
         return html
 
 
+def get_title(html):
+    """
+    Takes as input a html file, outputs the title of the advertisement as string.
+    """
+    title = html.find('title').get_text()
+    title = re.sub("Stellenausschreibung: ", "", title)
+    title = re.sub(" \| digital humanities im deutschsprachigen raum", "", title)
+    return title
+
+
+def get_date(html):
+    """
+    Takes as input a html file, outputs the date of publication of the advertisement as string.
+    """
+    date = html.find('span', {'class' : 'submitted'})
+    date = date.get_text()
+    date = re.sub("(.*?) - ", "", date)
+    date = date.strip()
+    return date
+    
+
 def get_metadata(html):
     """
     Takes as input a html file, outputs the metadata as string.
     The information are separated by "\t" as delimiter.
     Metadata which can't be extracted from the html file is replaced by "N.A.".
+    
     The title is printed.
     """
-    text = str(html.find_all('script', {'type' : 'application/ld+json'})[-2])   # Infos zu Anzeige im vorletztem <script type="application/ld+json">
-    text = re.sub('</script>', "", text)
-    text = re.sub('<script(.*?)>', "", text)
-    data = json.loads(text)
-    
-    title = str(data["title"])
-    employer = str(data["hiringOrganization"]["name"])
-    place = str(data["jobLocation"]["address"]["addressLocality"])
+    employer = "N.A."
+    place = "N.A."
     latitude = "N.A."
-    longitude = "N.A."
-    date = str(data["datePosted"])
+    longitude = "N.A."                               
     deadline = "N.A."                                             
     education = "N.A."
     industry = "N.A."
     type = "N.A."
     
-    metadata = title + "\t" + employer + "\t" + place + "\t" + latitude + "\t" + longitude + "\t" + date + "\t" + deadline + "\t" + education + "\t" + industry + "\t" + type  
+    metadata = get_title(html) + "\t" + employer + "\t" + place + "\t" + latitude + "\t" + longitude + "\t" + get_date(html) + "\t" + deadline + "\t" + education + "\t" + industry + "\t" + type 
 
-    print(title)
+    print(get_title(html))
     
     return metadata
                                         
@@ -75,13 +88,14 @@ def main(dir, htmlpages):
     Possible errors are catches by exceptions.
     """
     with open('metadaten.csv', 'a') as csvfile:     
+        
         for file in glob.glob(htmlpages):
             try:
-                html = read_html(file)            
+                html = read_html(file)
                 base = os.path.basename(file)                   # trennt Basis vom Dateipfad ab
                 id = str(os.path.splitext(base)[0])             # trennt Extension ab
                 csvfile.writelines(id + "\t" + get_metadata(html) + "\n")
-            except (AttributeError, UnicodeEncodeError, json.decoder.JSONDecodeError):           # Exceptions, falls Stellenanzeige nicht mehr online ist/ Fehler auftreten
+            except (AttributeError, UnicodeEncodeError):                               # Exceptions, falls Stellenanzeige nicht mehr online ist/ Fehler auftreten
                 print("Fehler!")
            
 main(dir, htmlpages)

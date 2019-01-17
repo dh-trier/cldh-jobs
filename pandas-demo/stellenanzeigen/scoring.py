@@ -13,6 +13,7 @@ from os.path import join
 import glob
 import pandas as pd
 import numpy as np
+from collections import Counter
 
 
 # === Parameters ===
@@ -54,7 +55,45 @@ def prepare_ads(ads, labels):
     ads = ads.replace({"(\[|\])":""}, regex=True)
     ads = ads.astype(int)
     #print(ads.head())
+    # Save the raw weights into a clean CSV file. 
+    save_dataframe(ads, "ads_raw.csv")
     return ads
+
+
+def apply_bonus(ads): 
+    """
+    Input is the raw scores per add dataframe.
+    Checks, for each ad, how many concepts classes are relevant. 
+    Depending on the value, applies a weighting to all values.
+    Outputs a dataframe with adjusted values.
+    See: http://pandas.pydata.org/pandas-docs/version/0.23/groupby.html    https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.mask.html    https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.isna.html
+    """
+    # (1) Add a column with number of concepts used. 
+    ads_masked = ads.mask(ads > 0)
+    concept_counts = ads_masked.T.isnull().sum()
+    concept_counts_dist = Counter(concept_counts)
+    print("concept count distribution:\n", concept_counts_dist)
+    #print(concept_counts)
+    ads["concept_counts"] = concept_counts
+    print(ads.head())
+    # (2) Depending on the count, apply a weighting to all values. 
+    bonus_weights = {0:1, 1:1,2:1,3:1,4:2,5:2,6:2,7:1,8:1,9:1,10:1,11:1,12:1,13:1,14:1,15:1,16:1}
+    ads = ads.groupby("concept_counts")
+    newads = []
+    for name, group in ads: 
+        print(name)
+        weights = [bonus_weights[int(name)]]*16
+        print(weights)
+        group = group.drop("concept_counts", axis="columns")
+        group = group.mul(bonus_weights[int(name)], axis="rows")
+        #print(group.head())
+        newads.append(group)
+    print(len(newads))
+    newads = pd.concat(newads)
+    print(newads.head())
+    save_dataframe(newads, "ads_bonus.csv")
+    return newads
+
 
 
 def prepare_weights(weights, labels): 
@@ -99,6 +138,7 @@ def combine_scores(weighted_cl, weighted_dh):
     combined["diff"] = combined["dh"] - combined["cl"]
     combined.sort_values(by="diff", ascending=False, inplace=True)
     #print(combined.head())
+    save_dataframe(combined, "ads_combined.csv")
     return combined
 
 
@@ -114,23 +154,19 @@ def main(adsfile, weightsfile, labelsfile):
     ads = read_csv(adsfile)
     # Prepare the ads file. 
     ads = prepare_ads(ads, labels)
+    # Add a bonus weight based on distribution
+    ads = apply_bonus(ads)
     # Read the weights file.
     weights = read_csv(weightsfile)
     # Prepare the weights file.
     weights = prepare_weights(weights, labels)
-    # Save the raw weights into a clean CSV file. 
-    save_dataframe(ads, "ads_raw.csv")
     # Apply the CL weights to the raw scores.
     weighted_cl = apply_weights(ads, "gewichte_cl", weights)
-    # Save the CL weighted job adverts to a CSV file.
     save_dataframe(weighted_cl, "ads_weighted_cl.csv")
     # Apply the DH weights to the raw scores.
     weighted_dh = apply_weights(ads, "gewichte_dh", weights)
-    # Save the DH weighted job adverts to a CSV file.
     save_dataframe(weighted_dh, "ads_weighted_dh.csv")
     # Compress the individual scores into one value per job.
     combined = combine_scores(weighted_cl, weighted_dh)
-    # Save the combined data to a CSV file as well.
-    save_dataframe(combined, "ads_combined.csv")
     
 main(adsfile, weightsfile, labelsfile)

@@ -24,6 +24,7 @@ wdir = ""
 txtfiles = join(wdir, "txt", "*.txt")
 countsfile = join(wdir, "word-counts.csv")
 
+
 # === Functions ===
 
 def save_dataframe(dataframe, filename):
@@ -84,7 +85,6 @@ def create_dataframe(allcounts):
     return allcounts
 
 
-
 def relative_freqs(allcounts): 
     """
     Input is a dataframe of absolute word counts. 
@@ -108,26 +108,16 @@ def descriptive_statistics(relfreqs):
     Calculates the standard deviation of each word across texts.
     Adds them to the dataframe.
     """ 
-    relfreqs["mean"] = np.mean(relfreqs, axis="columns")
-    #print(relfreqs.loc[:,"mean"])
-    relfreqs["stdev"] = np.std(relfreqs, axis="columns")
-    #print(relfreqs.loc[:,"stdev"])
-    relfreqs = relfreqs.sort_values(by="mean", ascending=False)
-    #print(relfreqs.head())
-    return relfreqs
+    means = np.mean(relfreqs, axis="columns")
+    stdevs = np.std(relfreqs, axis="columns")
+    return means, stdevs
 
 
-def make_zscores(relfreqs): 
+def make_zscores(relfreqs, means, stdevs): 
     """
     Input is dataframe of relative word frequencies with mean and stdev.
     Output is a dataframe of zscores. 
     """
-    means = relfreqs.loc[:,"mean"]
-    stdevs = relfreqs.loc[:,"stdev"]
-    relfreqs = relfreqs.drop(["mean", "stdev"], axis="columns")
-    #print(means.head())
-    #print(stdevs.head())
-    #print(relfreqs.head())
     normalized = relfreqs.sub(means, axis="index")
     save_dataframe(normalized, "2-normalized.csv")
     #print(normalized.head())
@@ -154,7 +144,7 @@ def main(txtfiles, countsfile):
         allcounts[filename] = counts
     allcounts = create_dataframe(allcounts)
     relfreqs = relative_freqs(allcounts)
-    relfreqs = descriptive_statistics(relfreqs)
-    zscores = make_zscores(relfreqs)
+    means, stdevs = descriptive_statistics(relfreqs)
+    zscores = make_zscores(relfreqs, means, stdevs)
 
 main(txtfiles, countsfile)

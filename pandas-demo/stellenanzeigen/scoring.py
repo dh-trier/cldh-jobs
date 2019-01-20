@@ -75,15 +75,15 @@ def apply_bonus(ads):
     print("concept count distribution:\n", concept_counts_dist)
     #print(concept_counts)
     ads["concept_counts"] = concept_counts
-    print(ads.head())
+    #print(ads.head())
     # (2) Depending on the count, apply a weighting to all values. 
     bonus_weights = {0:1, 1:1,2:1,3:1,4:2,5:2,6:2,7:1,8:1,9:1,10:1,11:1,12:1,13:1,14:1,15:1,16:1}
     ads = ads.groupby("concept_counts")
     newads = []
     for name, group in ads: 
-        print(name)
+        #print(name)
         weights = [bonus_weights[int(name)]]*16
-        print(weights)
+        #print(weights)
         group = group.drop("concept_counts", axis="columns")
         group = group.mul(bonus_weights[int(name)], axis="rows")
         #print(group.head())

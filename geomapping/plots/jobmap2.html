@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_d2d850c78a844a54ae78d6304406f7b9 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_d2d850c78a844a54ae78d6304406f7b9" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_d2d850c78a844a54ae78d6304406f7b9 = L.map(
+        'map_d2d850c78a844a54ae78d6304406f7b9', {
+        center: [51.312801, 9.481544],
+        zoom: 7,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_c44146ef34864186abd2c3d6097ca677 = L.tileLayer(
+        'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
+        {
+        "attribution": "<a href=\"http://maps.stamen.com/\">Stamen</a> | <a href=\"https://www.openstreetmap.org\">OSM</a> | <a href=\"http://python-visualization.github.io/folium/\">Folium</a>",
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+    
+        var marker_62b318a95f514b9899c6749bb1f6fd27 = L.marker(
+            [51.312801, 9.481544],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+        
+    
+            var popup_2753c90480ec4687bf610fab16663412 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6952dec1242449e09a9025da56e1b28f = $(`<div id="html_6952dec1242449e09a9025da56e1b28f" style="width: 100.0%; height: 100.0%;">Kassel</div>`)[0];
+                popup_2753c90480ec4687bf610fab16663412.setContent(html_6952dec1242449e09a9025da56e1b28f);
+            
+
+            marker_62b318a95f514b9899c6749bb1f6fd27.bindPopup(popup_2753c90480ec4687bf610fab16663412)
+            ;
+
+            
+        
+    
+            var circle_marker_035d3e5db08443e4abfa91614f689191 = L.circleMarker(
+                [49.75, 6.63333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 34,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_a30a4480064f424d9c62a51eb7734766 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_23e3c7084ce54724bcd211798b311bbf = $(`<div id="html_23e3c7084ce54724bcd211798b311bbf" style="width: 100.0%; height: 100.0%;">Trier: 17 CL-Stellen</div>`)[0];
+                popup_a30a4480064f424d9c62a51eb7734766.setContent(html_23e3c7084ce54724bcd211798b311bbf);
+            
+
+            circle_marker_035d3e5db08443e4abfa91614f689191.bindPopup(popup_a30a4480064f424d9c62a51eb7734766)
+            ;
+
+            
+        
+    
+            var circle_marker_38a87c784478435eb9ef4588dba5eb18 = L.circleMarker(
+                [50.35, 7.6],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 44,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_d9a0e0d9797f4b22a48680201f56d0d4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_16f0aade1000439683fdbb0a884715aa = $(`<div id="html_16f0aade1000439683fdbb0a884715aa" style="width: 100.0%; height: 100.0%;">Koblenz: 22 CL-Stellen</div>`)[0];
+                popup_d9a0e0d9797f4b22a48680201f56d0d4.setContent(html_16f0aade1000439683fdbb0a884715aa);
+            
+
+            circle_marker_38a87c784478435eb9ef4588dba5eb18.bindPopup(popup_d9a0e0d9797f4b22a48680201f56d0d4)
+            ;
+
+            
+        
+    
+            var circle_marker_fb398c624f8944a59aa181311c149a39 = L.circleMarker(
+                [49.45, 7.75],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 24,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_f1d9ac14721140fd9e372148dfecb8fc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a57da73565f34e95803f00f160952562 = $(`<div id="html_a57da73565f34e95803f00f160952562" style="width: 100.0%; height: 100.0%;">Kaiserslautern: 12 CL-Stellen</div>`)[0];
+                popup_f1d9ac14721140fd9e372148dfecb8fc.setContent(html_a57da73565f34e95803f00f160952562);
+            
+
+            circle_marker_fb398c624f8944a59aa181311c149a39.bindPopup(popup_f1d9ac14721140fd9e372148dfecb8fc)
+            ;
+
+            
+        
+    
+            var circle_marker_8a7ab9712ce1480da2b017ace0ddb8cd = L.circleMarker(
+                [49.2333, 7.0],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 68,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_279b38023b114466a487f4b979bf8512 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_33da6f5fe14247dab9f0f15491fb265e = $(`<div id="html_33da6f5fe14247dab9f0f15491fb265e" style="width: 100.0%; height: 100.0%;">Saarbrücken: 34 CL-Stellen</div>`)[0];
+                popup_279b38023b114466a487f4b979bf8512.setContent(html_33da6f5fe14247dab9f0f15491fb265e);
+            
+
+            circle_marker_8a7ab9712ce1480da2b017ace0ddb8cd.bindPopup(popup_279b38023b114466a487f4b979bf8512)
+            ;
+
+            
+        
+    
+            var circle_marker_13a71422f8884db193f9afec04bf74f9 = L.circleMarker(
+                [50.0833, 8.25],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 12,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_92d7e05542f8469e93b65d4896546ee1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_57cf3a491b9a4df19c00e0de1c1cfbf9 = $(`<div id="html_57cf3a491b9a4df19c00e0de1c1cfbf9" style="width: 100.0%; height: 100.0%;">Wiesbaden: 6 CL-Stellen</div>`)[0];
+                popup_92d7e05542f8469e93b65d4896546ee1.setContent(html_57cf3a491b9a4df19c00e0de1c1cfbf9);
+            
+
+            circle_marker_13a71422f8884db193f9afec04bf74f9.bindPopup(popup_92d7e05542f8469e93b65d4896546ee1)
+            ;
+
+            
+        
+    
+            var circle_marker_71bf953298ea4a45a557f6cafaf329ca = L.circleMarker(
+                [49.9833, 6.88333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_e94c3f9822744f6b96a14e82b3c3803e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2e592a376cdd4e33ab9db11021410f35 = $(`<div id="html_2e592a376cdd4e33ab9db11021410f35" style="width: 100.0%; height: 100.0%;">Wittlich: 1 CL-Stellen</div>`)[0];
+                popup_e94c3f9822744f6b96a14e82b3c3803e.setContent(html_2e592a376cdd4e33ab9db11021410f35);
+            
+
+            circle_marker_71bf953298ea4a45a557f6cafaf329ca.bindPopup(popup_e94c3f9822744f6b96a14e82b3c3803e)
+            ;
+
+            
+        
+    
+            var circle_marker_4b5bb50313a440d4ac408fbfe0cc3d64 = L.circleMarker(
+                [49.8706, 8.64944],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 16,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_2ae0a7e951d244ecb288c68f9f035a82 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d15ada095bd74a7c81c92c3d722ccdf7 = $(`<div id="html_d15ada095bd74a7c81c92c3d722ccdf7" style="width: 100.0%; height: 100.0%;">Darmstadt: 8 CL-Stellen</div>`)[0];
+                popup_2ae0a7e951d244ecb288c68f9f035a82.setContent(html_d15ada095bd74a7c81c92c3d722ccdf7);
+            
+
+            circle_marker_4b5bb50313a440d4ac408fbfe0cc3d64.bindPopup(popup_2ae0a7e951d244ecb288c68f9f035a82)
+            ;
+
+            
+        
+    
+            var circle_marker_1f05b59bd7104732af7aa3b4d48f9ce8 = L.circleMarker(
+                [49.9667, 6.53333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 2,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_b2258c483b7e4b9b9a50ec60011703b5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ae8d60490f114e8285d4edca5747cc00 = $(`<div id="html_ae8d60490f114e8285d4edca5747cc00" style="width: 100.0%; height: 100.0%;">Bitburg: 1 CL-Stellen</div>`)[0];
+                popup_b2258c483b7e4b9b9a50ec60011703b5.setContent(html_ae8d60490f114e8285d4edca5747cc00);
+            
+
+            circle_marker_1f05b59bd7104732af7aa3b4d48f9ce8.bindPopup(popup_b2258c483b7e4b9b9a50ec60011703b5)
+            ;
+
+            
+        
+    
+            var circle_marker_5c26ad2dc9354ce6804ea0f74822ce53 = L.circleMarker(
+                [49.5333, 6.88333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_1ba29d931f384f60892f4e5c58d7cc5a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9ed64c52a1444a99a49447ee34f56934 = $(`<div id="html_9ed64c52a1444a99a49447ee34f56934" style="width: 100.0%; height: 100.0%;">Wadern: 4 CL-Stellen</div>`)[0];
+                popup_1ba29d931f384f60892f4e5c58d7cc5a.setContent(html_9ed64c52a1444a99a49447ee34f56934);
+            
+
+            circle_marker_5c26ad2dc9354ce6804ea0f74822ce53.bindPopup(popup_1ba29d931f384f60892f4e5c58d7cc5a)
+            ;
+
+            
+        
+    
+            var circle_marker_73d4cc1e109147ec9381685b078fba5e = L.circleMarker(
+                [51.5042534718111, 7.4836885452271],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_86fa75ab9ced4e5786ca2780f73edc29 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3d0da0cc289c4d9c80fc9d48cc36c97f = $(`<div id="html_3d0da0cc289c4d9c80fc9d48cc36c97f" style="width: 100.0%; height: 100.0%;">Dortmund: 15 CL-Stellen</div>`)[0];
+                popup_86fa75ab9ced4e5786ca2780f73edc29.setContent(html_3d0da0cc289c4d9c80fc9d48cc36c97f);
+            
+
+            circle_marker_73d4cc1e109147ec9381685b078fba5e.bindPopup(popup_86fa75ab9ced4e5786ca2780f73edc29)
+            ;
+
+            
+        
+    
+            var circle_marker_b9237df5316e4a68b2120ede07c10298 = L.circleMarker(
+                [49.7878, 9.93611],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_67ae3d6455ac4e94bafe2c24281852b0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6b1e0d22f29a4dcd8068e42cdcc67776 = $(`<div id="html_6b1e0d22f29a4dcd8068e42cdcc67776" style="width: 100.0%; height: 100.0%;">Würzburg: 5 CL-Stellen</div>`)[0];
+                popup_67ae3d6455ac4e94bafe2c24281852b0.setContent(html_6b1e0d22f29a4dcd8068e42cdcc67776);
+            
+
+            circle_marker_b9237df5316e4a68b2120ede07c10298.bindPopup(popup_67ae3d6455ac4e94bafe2c24281852b0)
+            ;
+
+            
+        
+    
+            var circle_marker_ffaf56a1ba6c4d258992a2cf94cb0feb = L.circleMarker(
+                [51.316944, 9.4925],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_d3175e05f845415796dae4f296c3d52c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_83ff2562e5e44992a90df40fa65bd201 = $(`<div id="html_83ff2562e5e44992a90df40fa65bd201" style="width: 100.0%; height: 100.0%;">Kassel: 3 CL-Stellen</div>`)[0];
+                popup_d3175e05f845415796dae4f296c3d52c.setContent(html_83ff2562e5e44992a90df40fa65bd201);
+            
+
+            circle_marker_ffaf56a1ba6c4d258992a2cf94cb0feb.bindPopup(popup_d3175e05f845415796dae4f296c3d52c)
+            ;
+
+            
+        
+    
+            var circle_marker_42a6b86bbd2245c386b2ad06560e8759 = L.circleMarker(
+                [51.5316103448276, 10.014374137931],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_3a896b33dc474fbc8e4552af392d2558 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8e693047530246289dfaa6ffa022f3bf = $(`<div id="html_8e693047530246289dfaa6ffa022f3bf" style="width: 100.0%; height: 100.0%;">Göttingen: 5 CL-Stellen</div>`)[0];
+                popup_3a896b33dc474fbc8e4552af392d2558.setContent(html_8e693047530246289dfaa6ffa022f3bf);
+            
+
+            circle_marker_42a6b86bbd2245c386b2ad06560e8759.bindPopup(popup_3a896b33dc474fbc8e4552af392d2558)
+            ;
+
+            
+        
+    
+            var circle_marker_207e6d5c723f489bbb7653bcec789481 = L.circleMarker(
+                [48.1374, 11.5755],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 88,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_ec2c6094f6ad45a292c6f995886a3e51 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_45026a40219144358fba6422654f6649 = $(`<div id="html_45026a40219144358fba6422654f6649" style="width: 100.0%; height: 100.0%;">München: 44 CL-Stellen</div>`)[0];
+                popup_ec2c6094f6ad45a292c6f995886a3e51.setContent(html_45026a40219144358fba6422654f6649);
+            
+
+            circle_marker_207e6d5c723f489bbb7653bcec789481.bindPopup(popup_ec2c6094f6ad45a292c6f995886a3e51)
+            ;
+
+            
+        
+    
+            var circle_marker_35bddbbd190a4b3e9a9323a0a973a5c1 = L.circleMarker(
+                [52.52464, 13.40514],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 64,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_9fc4a7836de54dca821270e8688cbd0c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_224b673e21fc4e558b5e4169e3af4867 = $(`<div id="html_224b673e21fc4e558b5e4169e3af4867" style="width: 100.0%; height: 100.0%;">Berlin: 32 CL-Stellen</div>`)[0];
+                popup_9fc4a7836de54dca821270e8688cbd0c.setContent(html_224b673e21fc4e558b5e4169e3af4867);
+            
+
+            circle_marker_35bddbbd190a4b3e9a9323a0a973a5c1.bindPopup(popup_9fc4a7836de54dca821270e8688cbd0c)
+            ;
+
+            
+        
+    
+            var circle_marker_453721d8a5b54069b60eaea3a28af57d = L.circleMarker(
+                [53.554423, 9.994583],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 24,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_db8c618fd59e484d94ab3801c52ed39a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a6191cdacc434bb4b294c0d2389ed69b = $(`<div id="html_a6191cdacc434bb4b294c0d2389ed69b" style="width: 100.0%; height: 100.0%;">Hamburg: 12 CL-Stellen</div>`)[0];
+                popup_db8c618fd59e484d94ab3801c52ed39a.setContent(html_a6191cdacc434bb4b294c0d2389ed69b);
+            
+
+            circle_marker_453721d8a5b54069b60eaea3a28af57d.bindPopup(popup_db8c618fd59e484d94ab3801c52ed39a)
+            ;
+
+            
+        
+    
+            var circle_marker_b6e7ddd3200c49d19fb39915eeab5971 = L.circleMarker(
+                [50.9333, 6.95],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkblue",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_98e727e992c44c79940e032a35ec766a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_037804324e3b40e28622a865b4fa0885 = $(`<div id="html_037804324e3b40e28622a865b4fa0885" style="width: 100.0%; height: 100.0%;">Köln: 4 CL-Stellen</div>`)[0];
+                popup_98e727e992c44c79940e032a35ec766a.setContent(html_037804324e3b40e28622a865b4fa0885);
+            
+
+            circle_marker_b6e7ddd3200c49d19fb39915eeab5971.bindPopup(popup_98e727e992c44c79940e032a35ec766a)
+            ;
+
+            
+        
+    
+            var circle_marker_59af60530c274d39a43b9f685dcef8a0 = L.circleMarker(
+                [49.75, 6.63333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 24,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_15268e3cc5c543b4bde876ff91d3328e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4e02f1d7a4424e97bf76d14b409ed407 = $(`<div id="html_4e02f1d7a4424e97bf76d14b409ed407" style="width: 100.0%; height: 100.0%;">Trier: 12 DH-Stellen</div>`)[0];
+                popup_15268e3cc5c543b4bde876ff91d3328e.setContent(html_4e02f1d7a4424e97bf76d14b409ed407);
+            
+
+            circle_marker_59af60530c274d39a43b9f685dcef8a0.bindPopup(popup_15268e3cc5c543b4bde876ff91d3328e)
+            ;
+
+            
+        
+    
+            var circle_marker_9fa17006f042486192872585e24298f8 = L.circleMarker(
+                [50.35, 7.6],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 28,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_65dd3fbb201a409d88de9f29a91fcf0e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_37eced0b2485419e9c7818f40b07df22 = $(`<div id="html_37eced0b2485419e9c7818f40b07df22" style="width: 100.0%; height: 100.0%;">Koblenz: 14 DH-Stellen</div>`)[0];
+                popup_65dd3fbb201a409d88de9f29a91fcf0e.setContent(html_37eced0b2485419e9c7818f40b07df22);
+            
+
+            circle_marker_9fa17006f042486192872585e24298f8.bindPopup(popup_65dd3fbb201a409d88de9f29a91fcf0e)
+            ;
+
+            
+        
+    
+            var circle_marker_b2a649f3f36d4c9c9ffdfc50c04e7f9a = L.circleMarker(
+                [49.45, 7.75],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 8,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_bdb37e0d02644029b0ba53386f02890e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_41560f3c76304e99a359ca4d3c1e6a58 = $(`<div id="html_41560f3c76304e99a359ca4d3c1e6a58" style="width: 100.0%; height: 100.0%;">Kaiserslautern: 4 DH-Stellen</div>`)[0];
+                popup_bdb37e0d02644029b0ba53386f02890e.setContent(html_41560f3c76304e99a359ca4d3c1e6a58);
+            
+
+            circle_marker_b2a649f3f36d4c9c9ffdfc50c04e7f9a.bindPopup(popup_bdb37e0d02644029b0ba53386f02890e)
+            ;
+
+            
+        
+    
+            var circle_marker_5e73d35c318e419ba7b37d82a1cd4783 = L.circleMarker(
+                [49.2333, 7.0],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_42c045c6a33243479f3dfbb637d7fe09 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2b25aa597f33493396a71150facec907 = $(`<div id="html_2b25aa597f33493396a71150facec907" style="width: 100.0%; height: 100.0%;">Saarbrücken: 3 DH-Stellen</div>`)[0];
+                popup_42c045c6a33243479f3dfbb637d7fe09.setContent(html_2b25aa597f33493396a71150facec907);
+            
+
+            circle_marker_5e73d35c318e419ba7b37d82a1cd4783.bindPopup(popup_42c045c6a33243479f3dfbb637d7fe09)
+            ;
+
+            
+        
+    
+            var circle_marker_56d278fc908e4f6fa6de371875e2d7c1 = L.circleMarker(
+                [50.0833, 8.25],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_3e0ab26c249048d3956acb9b70ddbd60 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5ac4b19ce06747fa9c5eea9db5ae8fff = $(`<div id="html_5ac4b19ce06747fa9c5eea9db5ae8fff" style="width: 100.0%; height: 100.0%;">Wiesbaden: 2 DH-Stellen</div>`)[0];
+                popup_3e0ab26c249048d3956acb9b70ddbd60.setContent(html_5ac4b19ce06747fa9c5eea9db5ae8fff);
+            
+
+            circle_marker_56d278fc908e4f6fa6de371875e2d7c1.bindPopup(popup_3e0ab26c249048d3956acb9b70ddbd60)
+            ;
+
+            
+        
+    
+            var circle_marker_7471144fadee41b29f694df5abe231bf = L.circleMarker(
+                [49.9833, 6.88333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_f2e6769ed8fe444586bd47bd8f8ed255 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_de9da11f925d40d196f4f945b85f288c = $(`<div id="html_de9da11f925d40d196f4f945b85f288c" style="width: 100.0%; height: 100.0%;">Wittlich: 0 DH-Stellen</div>`)[0];
+                popup_f2e6769ed8fe444586bd47bd8f8ed255.setContent(html_de9da11f925d40d196f4f945b85f288c);
+            
+
+            circle_marker_7471144fadee41b29f694df5abe231bf.bindPopup(popup_f2e6769ed8fe444586bd47bd8f8ed255)
+            ;
+
+            
+        
+    
+            var circle_marker_72c9e817199c442db850c8955fda79ca = L.circleMarker(
+                [49.8706, 8.64944],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_b98aa4e968e74d46bb973ea548586771 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dd20ee26284a4cf397c4d8e6082c777d = $(`<div id="html_dd20ee26284a4cf397c4d8e6082c777d" style="width: 100.0%; height: 100.0%;">Darmstadt: 2 DH-Stellen</div>`)[0];
+                popup_b98aa4e968e74d46bb973ea548586771.setContent(html_dd20ee26284a4cf397c4d8e6082c777d);
+            
+
+            circle_marker_72c9e817199c442db850c8955fda79ca.bindPopup(popup_b98aa4e968e74d46bb973ea548586771)
+            ;
+
+            
+        
+    
+            var circle_marker_70e9b735432b4bb7a275d8725498b2f5 = L.circleMarker(
+                [49.9667, 6.53333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_990f00fad2174dca94213afcaa1be48b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_23a20d9a5d79476fb9cdffd1bb5c981f = $(`<div id="html_23a20d9a5d79476fb9cdffd1bb5c981f" style="width: 100.0%; height: 100.0%;">Bitburg: 0 DH-Stellen</div>`)[0];
+                popup_990f00fad2174dca94213afcaa1be48b.setContent(html_23a20d9a5d79476fb9cdffd1bb5c981f);
+            
+
+            circle_marker_70e9b735432b4bb7a275d8725498b2f5.bindPopup(popup_990f00fad2174dca94213afcaa1be48b)
+            ;
+
+            
+        
+    
+            var circle_marker_68dda570a48147cb92ca507131526030 = L.circleMarker(
+                [49.5333, 6.88333],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_d50b7a18a9324c0ca67a86220c24d899 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4ca8b191242445b4b583e74817b1952d = $(`<div id="html_4ca8b191242445b4b583e74817b1952d" style="width: 100.0%; height: 100.0%;">Wadern: 0 DH-Stellen</div>`)[0];
+                popup_d50b7a18a9324c0ca67a86220c24d899.setContent(html_4ca8b191242445b4b583e74817b1952d);
+            
+
+            circle_marker_68dda570a48147cb92ca507131526030.bindPopup(popup_d50b7a18a9324c0ca67a86220c24d899)
+            ;
+
+            
+        
+    
+            var circle_marker_8cbe6ff9afa34276b15dd33c23a5ad79 = L.circleMarker(
+                [51.5042534718111, 7.4836885452271],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_fb9903404b1d4e72ba2bb2afcbfe1206 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8f4f4619ae98498bbcee46c49c01987f = $(`<div id="html_8f4f4619ae98498bbcee46c49c01987f" style="width: 100.0%; height: 100.0%;">Dortmund: 2 DH-Stellen</div>`)[0];
+                popup_fb9903404b1d4e72ba2bb2afcbfe1206.setContent(html_8f4f4619ae98498bbcee46c49c01987f);
+            
+
+            circle_marker_8cbe6ff9afa34276b15dd33c23a5ad79.bindPopup(popup_fb9903404b1d4e72ba2bb2afcbfe1206)
+            ;
+
+            
+        
+    
+            var circle_marker_8421ca9a6faf4815a8b5180b44bd9ad3 = L.circleMarker(
+                [49.7878, 9.93611],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 24,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_bf0e1a983c17425088cbb705a7d13f42 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d6c2586b57c348d1838c01f2da5da396 = $(`<div id="html_d6c2586b57c348d1838c01f2da5da396" style="width: 100.0%; height: 100.0%;">Würzburg: 12 DH-Stellen</div>`)[0];
+                popup_bf0e1a983c17425088cbb705a7d13f42.setContent(html_d6c2586b57c348d1838c01f2da5da396);
+            
+
+            circle_marker_8421ca9a6faf4815a8b5180b44bd9ad3.bindPopup(popup_bf0e1a983c17425088cbb705a7d13f42)
+            ;
+
+            
+        
+    
+            var circle_marker_4b0f72ec7e8d423097db4b6889933476 = L.circleMarker(
+                [51.316944, 9.4925],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 4,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_923880f37aaa4ccc8537fcf0bffdffcc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6533abf80e584b4eb8f526d8b4a446a8 = $(`<div id="html_6533abf80e584b4eb8f526d8b4a446a8" style="width: 100.0%; height: 100.0%;">Kassel: 2 DH-Stellen</div>`)[0];
+                popup_923880f37aaa4ccc8537fcf0bffdffcc.setContent(html_6533abf80e584b4eb8f526d8b4a446a8);
+            
+
+            circle_marker_4b0f72ec7e8d423097db4b6889933476.bindPopup(popup_923880f37aaa4ccc8537fcf0bffdffcc)
+            ;
+
+            
+        
+    
+            var circle_marker_daeb9f5c5e2e4d7383713aad3f716dc5 = L.circleMarker(
+                [51.5316103448276, 10.014374137931],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 30,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_bd9684bb695c4ab29e902a3c746e11bb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f58ca052c43547afa9cfed41db10446e = $(`<div id="html_f58ca052c43547afa9cfed41db10446e" style="width: 100.0%; height: 100.0%;">Göttingen: 15 DH-Stellen</div>`)[0];
+                popup_bd9684bb695c4ab29e902a3c746e11bb.setContent(html_f58ca052c43547afa9cfed41db10446e);
+            
+
+            circle_marker_daeb9f5c5e2e4d7383713aad3f716dc5.bindPopup(popup_bd9684bb695c4ab29e902a3c746e11bb)
+            ;
+
+            
+        
+    
+            var circle_marker_2b84b0801e1140d2a7992a04ab12f952 = L.circleMarker(
+                [48.1374, 11.5755],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 24,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_4b05787880cd47c896ed4e531227e7e7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9e8e7860253449c3819cc01ac09594b3 = $(`<div id="html_9e8e7860253449c3819cc01ac09594b3" style="width: 100.0%; height: 100.0%;">München: 12 DH-Stellen</div>`)[0];
+                popup_4b05787880cd47c896ed4e531227e7e7.setContent(html_9e8e7860253449c3819cc01ac09594b3);
+            
+
+            circle_marker_2b84b0801e1140d2a7992a04ab12f952.bindPopup(popup_4b05787880cd47c896ed4e531227e7e7)
+            ;
+
+            
+        
+    
+            var circle_marker_beb5dbdff1224b39b2f5a201d30a70f9 = L.circleMarker(
+                [52.52464, 13.40514],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 32,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_50d55ce96b144374aabbafeda2ec6003 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ee630f0e9bdd4022af770b2c49a2304f = $(`<div id="html_ee630f0e9bdd4022af770b2c49a2304f" style="width: 100.0%; height: 100.0%;">Berlin: 16 DH-Stellen</div>`)[0];
+                popup_50d55ce96b144374aabbafeda2ec6003.setContent(html_ee630f0e9bdd4022af770b2c49a2304f);
+            
+
+            circle_marker_beb5dbdff1224b39b2f5a201d30a70f9.bindPopup(popup_50d55ce96b144374aabbafeda2ec6003)
+            ;
+
+            
+        
+    
+            var circle_marker_666225b7e1df4778a24ed23f90e65863 = L.circleMarker(
+                [53.554423, 9.994583],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 6,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_81108c2af30e444ba8462023261061b0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ec8b3fcbe5b94b21981512367ea963b1 = $(`<div id="html_ec8b3fcbe5b94b21981512367ea963b1" style="width: 100.0%; height: 100.0%;">Hamburg: 3 DH-Stellen</div>`)[0];
+                popup_81108c2af30e444ba8462023261061b0.setContent(html_ec8b3fcbe5b94b21981512367ea963b1);
+            
+
+            circle_marker_666225b7e1df4778a24ed23f90e65863.bindPopup(popup_81108c2af30e444ba8462023261061b0)
+            ;
+
+            
+        
+    
+            var circle_marker_cc5d00819e0c4060b79af93585dbc522 = L.circleMarker(
+                [50.9333, 6.95],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "darkred",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 64,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_d2d850c78a844a54ae78d6304406f7b9);
+            
+    
+            var popup_a5ac148ed7c34471aab8efd00555c1d4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d7fc75b7c6b14c9ea6f20d2b78d31e6e = $(`<div id="html_d7fc75b7c6b14c9ea6f20d2b78d31e6e" style="width: 100.0%; height: 100.0%;">Köln: 32 DH-Stellen</div>`)[0];
+                popup_a5ac148ed7c34471aab8efd00555c1d4.setContent(html_d7fc75b7c6b14c9ea6f20d2b78d31e6e);
+            
+
+            circle_marker_cc5d00819e0c4060b79af93585dbc522.bindPopup(popup_a5ac148ed7c34471aab8efd00555c1d4)
+            ;
+
+            
+        
+</script>

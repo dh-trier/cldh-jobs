@@ -108,8 +108,8 @@ def main(test1, test2, textpath):
         #print(filename)
         tlang,identifier = re.split("=", filename)
         text = read_file(textfile) 
-        #plang = use_langdetect(text) # activate only one (medium)
-        plang = use_polyglot(text)   # activate only one (fast)
+        plang = use_langdetect(text) # activate only one (medium)
+        #plang = use_polyglot(text)   # activate only one (fast)
         #plang = use_textblob(text)   # activate only one (slow)
         correct, total = evaluate_detection(tlang, plang, correct, total)
     performance = correct/total*100

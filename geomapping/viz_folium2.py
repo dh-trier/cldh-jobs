@@ -12,6 +12,7 @@ import re
 import os
 from os.path import join
 import pandas as pd
+import numpy as np
 
 
 # == specific imports ==
@@ -22,8 +23,8 @@ import folium
 # == parameters == 
 
 jobsdatafile = join("data", "cities-and-jobs.csv")
-geodatafile = join("data", "geo-de.csv")
-mapfile = join("plots", "jobmap2.html")
+geodatafile = join("data", "geo-de-org.csv")
+mapfile = join("plots", "jobmap3.html")
 mapstyle = "Stamen Toner" # "Open Street Map" | "Stamen Watercolor" | "Stamen Terrain" | "Stamen Toner"
 
 
@@ -35,7 +36,7 @@ def open_datafile(datafile):
     Reads a CSV file and returns a DataFrame.
     """
     with open(datafile, "r", encoding="utf8") as infile: 
-        data = pd.read_table(infile, sep="[\t;]", engine="python")
+        data = pd.read_csv(infile, sep=";")  #NEU/GEÄNDERT 30.1.2018
         #print(data.head())
         return data
 
@@ -69,16 +70,26 @@ def get_markerdata(geodata, jobsdata):
     and puts them together in a dictionary. 
     Calls get_latlon for each place. 
     """
-    markerdata = {}    
+    markerdata = {}
     places = list(jobsdata.loc[:,"place"])
+    #print(places)
+    jobnumsALL = list(jobsdata.loc[:, "jobs"])
     jobnumsCL = list(jobsdata.loc[:, "jobs-cl"])
     jobnumsDH = list(jobsdata.loc[:, "jobs-dh"])
     for i in range (0,len(places)): 
         place = places[i]
+        jobnumALL = jobnumsALL[i]
         jobnumCL = jobnumsCL[i]
         jobnumDH = jobnumsDH[i]
-        lat,lon = get_latlon(geodata, place)
-        markerdata[place] = {"jobs-cl" : jobnumCL,
+        try:                         #NEU/GEÄNDERT 30.1.2018
+            lat,lon = get_latlon(geodata, place)
+            #print(lat,lon)
+        except: 
+            print("No geodata for this location:", place)
+            lat, lon = 51.16, 10.45
+            #print(lat, lon)
+        markerdata[place] = {"jobs-all" : jobnumALL,
+                             "jobs-cl" : jobnumCL,
                              "jobs-dh" : jobnumDH,
                              "lat" : lat,
                              "lon" : lon}
@@ -94,8 +105,7 @@ def make_map(mapfile, mapstyle):
         zoom_start=7,
         tiles = mapstyle,
         attr="<a href=\"http://maps.stamen.com/\">Stamen</a> | <a href=\"https://www.openstreetmap.org\">OSM</a> | <a href=\"http://python-visualization.github.io/folium/\">Folium</a>")
-    folium.Marker(location=[51.312801, 9.481544], 
-        popup="Kassel").add_to(mymap)
+    folium.Marker(location=[49.75,6.63333], popup="Trier").add_to(mymap)
     mymap.save(mapfile)
     return mymap
 
@@ -107,6 +117,21 @@ def add_markers(mymap, markerdata, mapfile):
     with the size of the circle showing the number of jobs, 
     and with the popup showing the place name and number of jobs. 
     Saves the map to an HTML file. 
+    """
+    for place, data in markerdata.items():       #NEU/GEÄNDERT 30.1.2018
+        lat = float(data["lat"])
+        lon = float(data["lon"])
+        label = str(place) + ": " + str(data["jobs-all"]) + " CL/DH-Stellen"
+        #print(lat,lon,label)
+        radius = float(((data["jobs-all"])/8)+3)      #NEU/GEÄNDERT 30.1.2018
+        #if data["jobs-all"] > 10: 
+        #    print(data["jobs-all"], radius)
+        folium.CircleMarker(
+            location=[lat, lon],
+            popup = label,
+            radius = radius,
+            fill = True,
+            fill_color='darkgreen').add_to(mymap)
     """
     for place, data in markerdata.items():
         lat = float(data["lat"])
@@ -130,6 +155,7 @@ def add_markers(mymap, markerdata, mapfile):
             radius = radius,
             fill = True,
             fill_color='darkred').add_to(mymap)
+    """
     mymap.save(mapfile)
 
 

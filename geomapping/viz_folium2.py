@@ -127,7 +127,7 @@ def add_markers(mymap, markerdata, mapfile):
         #print(lat,lon,label)
         print(data["jobs-all"])
         radius = Radius.methode_rosch(data["jobs-all"])#NEU/GEÄNDERT 04.1.2018
-        #radius = Radius.methode_schoech(data["jobs-all"])#NEU/GEÄNDERT 04.1.2018
+        #radius = Radius.methode_schoesch(data["jobs-all"])#NEU/GEÄNDERT 04.1.2018
         #if data["jobs-all"] > 10:
         #    print(data["jobs-all"], radius)
         folium.CircleMarker(

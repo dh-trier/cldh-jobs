@@ -13,6 +13,8 @@ import os
 from os.path import join
 import pandas as pd
 import numpy as np
+import Radius
+
 
 
 # == specific imports ==
@@ -24,7 +26,7 @@ import folium
 
 jobsdatafile = join("data", "cities-and-jobs.csv")
 geodatafile = join("data", "geo-de-org.csv")
-mapfile = join("plots", "jobmap3.html")
+mapfile = join("plots", "jobmap4.html")
 mapstyle = "Stamen Toner" # "Open Street Map" | "Stamen Watercolor" | "Stamen Terrain" | "Stamen Toner"
 
 
@@ -123,8 +125,10 @@ def add_markers(mymap, markerdata, mapfile):
         lon = float(data["lon"])
         label = str(place) + ": " + str(data["jobs-all"]) + " CL/DH-Stellen"
         #print(lat,lon,label)
-        radius = float(((data["jobs-all"])/8)+3)      #NEU/GEÄNDERT 30.1.2018
-        #if data["jobs-all"] > 10: 
+        print(data["jobs-all"])
+        radius = Radius.methode_rosch(data["jobs-all"])#NEU/GEÄNDERT 04.1.2018
+        #radius = Radius.methode_schoesch(data["jobs-all"])#NEU/GEÄNDERT 04.1.2018
+        #if data["jobs-all"] > 10:
         #    print(data["jobs-all"], radius)
         folium.CircleMarker(
             location=[lat, lon],

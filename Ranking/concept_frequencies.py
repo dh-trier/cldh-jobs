@@ -43,7 +43,7 @@ def compare_word_concept(concept, word):
         return 1
     elif concept[0] == word[0] and len(word) > 6:
         distance = dist.levenshtein(word, concept)
-        if distance <= int(len(word) / 3):
+        if distance <= int(len(word) / 5):
             return 1
         else:
             return 0
@@ -59,7 +59,7 @@ def conceptgroup_to_dictionary(concept_group):
     arr = []
     for concept in concept_group:
         word = ''
-        if len(concept) == 1:
+        if len(concept) == 1 and concept not in arr:
             arr.append(concept[0])  # da alle Konzeptphrasen in einer Liste stehen, muss bei Einwortphrasen
                                     # das erste Element der Liste ausgewählt werden
         else:
@@ -67,7 +67,8 @@ def conceptgroup_to_dictionary(concept_group):
                 word += concept[i]
                 if i < (len(concept)-1):    # sofern noch ein Element folgt, hänge ein Leerzeichen an
                     word += ' '
-            arr.append(word)
+            if word not in arr:
+                arr.append(word)
     dictionary = {}
     for a in arr:
         dictionary[a] = 0
@@ -216,7 +217,7 @@ dictionary_concepts = {}
 with open('Konzeptliste_CL_DH.json') as f:
     data = json.load(f)
 
-print(data)
+#print(data)
 
 stopwords = read_text('stopwortliste.txt')
 stopword_list = stopwords.split()
@@ -224,8 +225,10 @@ stopword_list = stopwords.split()
 dir = ""
 txt_files = join(dir, "TXT", "*.txt")
 #print(txt_files)
-
+y = 1
 for file in glob.glob(txt_files):
+    print(str(y) + " von " + (str(len(txt_files))))
+    y += 1
     base = os.path.basename(file)                   # trennt Basis vom Dateipfad ab
     id = str(os.path.splitext(base)[0])             # trennt Extension ab
 
@@ -236,7 +239,7 @@ for file in glob.glob(txt_files):
 
     token_list = [token for token in tokens if token not in stopword_list]
 
-    print(token_list)
+    #print(token_list)
 
     key_dict = {}
     for key in data:

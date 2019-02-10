@@ -31,7 +31,8 @@ mapstyle = "Stamen Toner" # "Open Street Map" | "Stamen Watercolor" | "Stamen Te
 
 
 # == functions == 
-
+#Leere Liste fuer die Jobanzahl
+max_jobs = []
 
 def open_datafile(datafile): 
     """
@@ -78,6 +79,11 @@ def get_markerdata(geodata, jobsdata):
     jobnumsALL = list(jobsdata.loc[:, "jobs"])
     jobnumsCL = list(jobsdata.loc[:, "jobs-cl"])
     jobnumsDH = list(jobsdata.loc[:, "jobs-dh"])
+
+    # Jobanzahl wir in die Liste hinzugefuegt. Dies wird fuer die Formel, die Radiusgroesse berechnet verwendet.
+    max_jobs.extend(jobnumsALL)
+    # print(max_jobs)
+
     for i in range (0,len(places)): 
         place = places[i]
         jobnumALL = jobnumsALL[i]
@@ -112,6 +118,16 @@ def make_map(mapfile, mapstyle):
     return mymap
 
 
+
+def methode_rosch(total_jobs):
+    #Verteilt die Werte zwischen 4 und 50.
+    # x == groesste Stellenanzahl
+    x=max(max_jobs)
+    #print(x)
+    radius = float((total_jobs - 1) * 46 / ((x - 1) - 1) + 4)
+    return radius
+
+
 def add_markers(mymap, markerdata, mapfile):
     """
     For each place with any number of jobs, 
@@ -120,14 +136,14 @@ def add_markers(mymap, markerdata, mapfile):
     and with the popup showing the place name and number of jobs. 
     Saves the map to an HTML file. 
     """
-    for place, data in markerdata.items():       #NEU/GEÄNDERT 30.1.2018
+    for place, data in markerdata.items():       #NEU/GEÄNDERT 30.1.2019
         lat = float(data["lat"])
         lon = float(data["lon"])
         label = str(place) + ": " + str(data["jobs-all"]) + " CL/DH-Stellen"
         #print(lat,lon,label)
-        print(data["jobs-all"])
-        radius = Radius.methode_rosch(data["jobs-all"])#NEU/GEÄNDERT 04.1.2018
-        #radius = Radius.methode_schoesch(data["jobs-all"])#NEU/GEÄNDERT 04.1.2018
+        #print(data["jobs-all"])
+        radius = methode_rosch(data["jobs-all"])#NEU/GEÄNDERT 10.02.2019
+        #radius = Radius.methode_schoech(data["jobs-all"])#NEU/GEÄNDERT 04.1.2019
         #if data["jobs-all"] > 10:
         #    print(data["jobs-all"], radius)
         folium.CircleMarker(

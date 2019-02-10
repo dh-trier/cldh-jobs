@@ -80,7 +80,7 @@ def get_markerdata(geodata, jobsdata):
     jobnumsCL = list(jobsdata.loc[:, "jobs-cl"])
     jobnumsDH = list(jobsdata.loc[:, "jobs-dh"])
 
-    #Jobanzahl wir in die Liste hinzugefuegt. Dies wird fuer die Formel, die Radiusgroesse berechnet verwendet.
+    #Jobanzahl wird in die Liste hinzugefuegt. Dies wird fuer die Formel, die Radiusgroesse berechnet, verwendet.
     max_jobs.extend(jobnumsALL)
     
 

@@ -1,0 +1,32 @@
+Studentin oder Student gesucht
+für XML/TEI-Datenbankprojekt
+Joachim Raff (1822–1882) war ein deutscher Komponist schweizerischer
+Herkunft. Das Joachim-Raff-Archiv in Lachen beherbergt eine umfangreiche
+Sammlung von Dokumenten und Gegenständen, um Leben und Werk dieses
+Komponisten zu erforschen. Diverse Verzeichnisse (z.B. Briefe, Musikalien,
+Personen, Aufnahmen, Literatur) sind elektronisch vorhanden und teilweise in
+XML-Datenbanken abgebildet. Die Datenbestände müssen aber noch
+miteinander verknüpft und ästhetisch ansprechend online abrufbar gemacht
+werden.
+Deshalb sucht die Joachim-Raff-Gesellschaft Lachen eine Studentin oder
+einen Studenten, um im Stundenlohn* die XML-Datenbanken (eXist-db) zu
+unterhalten und deren Inhalte auf einem Portal (raff-archiv.ch) darzustellen.
+Anforderungen:
+• gute Kenntnisse von XML (idealerweise auch TEI), XQL, XSLT
+• Erfahrung mit Web-Design
+• gutes Verständnis von Datenbanken
+• Flair für die Visualisierung von Forschungsdaten
+• Bonus: Kenntnisse im Bereich der Server-Administration
+Interesse an der Musik des 19. Jahrhunderts ist erfreulich, aber keine Voraussetzung.
+Arbeitgeber: Joachim-Raff-Gesellschaft, Postfach 304, 8853 Lachen, Schweiz
+www.joachim-raff.ch (privater Verein)
+Arbeitsort: frei wählbar, allenfalls gelegentliche Teilnahme an Projektsitzungen
+in Lachen oder Skype-Konferenz
+Arbeitszeiten: frei wählbar (z.B. abends, Wochenenden)
+Zeitraum: Ab sofort bis Mitte Dezember 2018 (geschätzter Aufwand: je nach
+Vorkenntnissen 40 bis 60 Stunden)
+Bewerbungen mit kurzem Lebenslauf und Auflistung der relevanten technischen
+Kenntnisse bitte per Mail an: Nathan Labhart, info@joachim-raff.ch
+* verhandelbar
+
+

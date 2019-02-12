@@ -1,5 +1,5 @@
 #Die Dtei wird Zeilenweise gelesen.
-#in "final_list" array wird ein Token "Berlin" (in der Datei kann "Berlin" mehrmals vorkommen) nur einmal aufgenommen.
+#in "final_list" array wird ein Token z.B. "Berlin" (in der Datei kann "Berlin" mehrmals vorkommen) nur einmal aufgenommen.
 #Es entsteht ein Array ohne Dublikate
 with open("orte_alle-org.txt", "r", encoding="utf-8") as file:
     final_list = []

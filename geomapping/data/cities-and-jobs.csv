@@ -1,429 +1,511 @@
 place;jobs-cl;jobs-dh;jobs
-Karlsruhe;0.0;0.0;248
-Nürnberg;0.0;0.0;87
-Berlin;0.0;0.0;423
-Konstanz;0.0;0.0;13
-Hannover;0.0;0.0;50
-Köln;0.0;0.0;99
-Hamburg;0.0;0.0;165
-München;0.0;0.0;444
-Stuttgart;0.0;0.0;267
-Frankfurt am Main;0.0;0.0;258
-Mannheim;0.0;0.0;49
-Braunschweig;0.0;0.0;11
-Darmstadt;0.0;0.0;25
-Gernsbach;0.0;0.0;1
-Schwerin;0.0;0.0;2
-Neckarsulm;0.0;0.0;44
-Düsseldorf;0.0;0.0;100
-Essen;0.0;0.0;74
-Aurich;0.0;0.0;1
-Trier;0.0;0.0;19
-Offenburg;0.0;0.0;8
-Ettlingen;0.0;0.0;13
-Limburgerhof;0.0;0.0;10
-Bonn;0.0;0.0;72
-Basel;0.0;0.0;2
-Leipzig;0.0;0.0;63
-Norderstedt;0.0;0.0;3
-Wedel;0.0;0.0;1
-Eschborn;0.0;0.0;16
-Ravensburg;0.0;0.0;3
-Saarbrücken;0.0;0.0;14
-Leverkusen;0.0;0.0;10
-Erfurt;0.0;0.0;7
-Pforzheim;0.0;0.0;6
-Wolfsburg;0.0;0.0;41
-Kiel;0.0;0.0;9
-Augsburg;0.0;0.0;33
-Duisburg;0.0;0.0;8
-Krefeld;0.0;0.0;11
-Bremen;0.0;0.0;22
-Wien;0.0;0.0;7
-Schierling;0.0;0.0;2
-Ludwigsburg;0.0;0.0;31
-Passau;0.0;0.0;12
-Obersulm;0.0;0.0;4
-Salem;0.0;0.0;2
-Bielefeld;0.0;0.0;14
-Rostock;0.0;0.0;10
-Siegen;0.0;0.0;1
-Moosburg an der Isar;0.0;0.0;3
-Wiesbaden;0.0;0.0;21
-Böblingen;0.0;0.0;10
-Leinfelden-Echterdingen;0.0;0.0;17
-Minden;0.0;0.0;2
-Heidelberg;0.0;0.0;14
-Wuppertal;0.0;0.0;9
-Landsberg am Lech;0.0;0.0;1
-Remscheid;0.0;0.0;4
-Mönchengladbach;0.0;0.0;2
-Schwäbisch Hall;0.0;0.0;1
-Heilbronn;0.0;0.0;6
-Dortmund;0.0;0.0;28
-Baden-Baden;0.0;0.0;12
-Freiburg im Breisgau;0.0;0.0;6
-Immenstaad am Bodensee;0.0;0.0;4
-Jena;0.0;0.0;16
-Unterhaching;0.0;0.0;4
-Gescher;0.0;0.0;1
-Lahr;0.0;0.0;1
-Unterföhring;0.0;0.0;3
-Hettstedt;0.0;0.0;1
-Zürich;0.0;0.0;4
-Herdecke;0.0;0.0;1
-Walldorf;0.0;0.0;4
-Bad Homburg vor der Höhe;0.0;0.0;3
-Homberg;0.0;0.0;1
-Aachen;0.0;0.0;66
-Friedrichshafen;0.0;0.0;23
-Forchheim;0.0;0.0;2
-Deutschland;0.0;0.0;129
-French;0.0;0.0;9
-Renningen;0.0;0.0;54
-Mainz;0.0;0.0;12
-Jülich;0.0;0.0;5
-Bad Neustadt an der Saale;0.0;0.0;9
-Ingolstadt;0.0;0.0;56
-Ludwigshafen am Rhein;0.0;0.0;6
-Leonberg;0.0;0.0;6
-Freigericht;0.0;0.0;7
-Potsdam;0.0;0.0;18
-Guxhagen;0.0;0.0;1
-Neuhausen;0.0;0.0;10
-Weissach;0.0;0.0;2
-Wadern;0.0;0.0;7
-Mettlach;0.0;0.0;7
-Reutlingen;0.0;0.0;16
-Brandenburg;0.0;0.0;8
-Hildesheim;0.0;0.0;40
-Plochingen;0.0;0.0;6
-Fürth;0.0;0.0;10
-Weismain;0.0;0.0;7
-Freiburg;0.0;0.0;8
-Kreuzau;0.0;0.0;2
-Magdeburg;0.0;0.0;15
-Erlangen;0.0;0.0;32
-Haar;0.0;0.0;10
-Markgröningen;0.0;0.0;2
-Waldkirch;0.0;0.0;8
-Mülheim an der Ruhr;0.0;0.0;7
-Nürtingen;0.0;0.0;5
-Willich;0.0;0.0;2
-Sindelfingen;0.0;0.0;11
-Bochum;0.0;0.0;10
-Landshut;0.0;0.0;5
-Regensburg;0.0;0.0;31
-Tuttlingen;0.0;0.0;1
-Bitburg;0.0;0.0;1
-Ibbenbüren;0.0;0.0;2
-Schleswig-Holstein;0.0;0.0;4
-Laupheim;0.0;0.0;1
-Wetzlar;0.0;0.0;2
-Herford;0.0;0.0;1
-Lollar;0.0;0.0;2
-Schwarzheide;0.0;0.0;5
-Bayern;0.0;0.0;1
-Ditzingen;0.0;0.0;4
-Marktheidenfeld;0.0;0.0;1
-Baar;0.0;0.0;1
-Münster;0.0;0.0;22
-Sankt Augustin;0.0;0.0;8
-Fritzlar;0.0;0.0;1
-Moers;0.0;0.0;1
-Lehre;0.0;0.0;1
-Crailsheim;0.0;0.0;9
-Kassel;0.0;0.0;12
-Bad Nauheim;0.0;0.0;10
-Bühl;0.0;0.0;4
-Lingen;0.0;0.0;2
-Memmingen;0.0;0.0;2
-Bamberg;0.0;0.0;37
-Paderborn;0.0;0.0;24
-Kemnath;0.0;0.0;1
-Tech;0.0;0.0;1
-Cottbus;0.0;0.0;3
-Dresden;0.0;0.0;25
-Biberach an der Riß;0.0;0.0;3
-Donauwörth;0.0;0.0;2
-Oberhausen;0.0;0.0;9
-Oldenburg;0.0;0.0;7
-Gießen;0.0;0.0;11
-Erbach;0.0;0.0;2
-Homburg;0.0;0.0;9
-Limburg an der Lahn;0.0;0.0;5
-Thalfang;0.0;0.0;1
-Schweinfurt;0.0;0.0;7
-Tübingen;0.0;0.0;14
-Marburg an der Lahn;0.0;0.0;1
-Bayreuth;0.0;0.0;14
-Bottrop;0.0;0.0;1
-Eggenstein-Leopoldshafen;0.0;0.0;8
-Lübeck;0.0;0.0;1
-Rodgau;0.0;0.0;1
-Aerzen;0.0;0.0;1
-Kaiserslautern;0.0;0.0;9
-Achim;0.0;0.0;1
-Bietigheim-Bissingen;0.0;0.0;1
-Buchbach;0.0;0.0;1
-Ulm;0.0;0.0;16
-Flensburg;0.0;0.0;8
-Dutch;0.0;0.0;1
-Lichtenfels;0.0;0.0;1
-English;0.0;0.0;1
-Langenfeld;0.0;0.0;3
-Bremerhaven;0.0;0.0;1
-Krakau;0.0;0.0;1
-Ingelheim am Rhein;0.0;0.0;1
-Gaimersheim;0.0;0.0;1
-Nördlingen;0.0;0.0;1
-Heiligenhaus;0.0;0.0;2
-Frankenthal;0.0;0.0;2
-Aalen;0.0;0.0;3
-Landau;0.0;0.0;1
-Saalfeld;0.0;0.0;1
-Lohfelden;0.0;0.0;1
-Dübendorf;0.0;0.0;2
-Sonneberg;0.0;0.0;1
-Bad Honnef;0.0;0.0;1
-Innsbruck;0.0;0.0;1
-Meerbusch;0.0;0.0;1
-Paris;0.0;0.0;1
-Marbach am Neckar;0.0;0.0;1
-Osnabrück;0.0;0.0;4
-Sinsheim;0.0;0.0;3
-Wesel;0.0;0.0;1
-Göttingen;0.0;0.0;3
-Hamm;0.0;0.0;7
-Marburg;0.0;0.0;5
-London;0.0;0.0;1
-Cyprus;0.0;0.0;1
-Weimar;0.0;0.0;2
-Bern;0.0;0.0;1
-Graz;0.0;0.0;2
-Gifhorn;0.0;0.0;38
-Emden;0.0;0.0;1
-Wien;0.0;0.0;7
-Fellbach;0.0;0.0;7
-Winsen;0.0;0.0;1
-Munich;0.0;0.0;7
-Landsberg;0.0;0.0;1
-Wachtberg;0.0;0.0;3
-Gaggenau;0.0;0.0;4
-Hanau;0.0;0.0;3
-Markdorf;0.0;0.0;1
-Bad Pyrmont;0.0;0.0;3
-Lüneburg;0.0;0.0;5
-Naumburg;0.0;0.0;3
-Fladungen;0.0;0.0;3
-Linz;0.0;0.0;2
-Bargteheide;0.0;0.0;2
-Gütersloh;0.0;0.0;7
-Harsewinkel;0.0;0.0;2
-Steinheim;0.0;0.0;2
-Mühldorf am Inn;0.0;0.0;2
-Eppingen;0.0;0.0;2
-Rastatt;0.0;0.0;3
-Rödermark;0.0;0.0;2
-Toulouse;0.0;0.0;2
-Deggendorf;0.0;0.0;2
-Pune;0.0;0.0;4
-Ottobrunn;0.0;0.0;3
-Koblenz;0.0;0.0;2
-Ratingen;0.0;0.0;3
-Weingarten;0.0;0.0;2
-Quickborn;0.0;0.0;3
-Geesthacht;0.0;0.0;2
-Linnich;0.0;0.0;1
-Wilhelmshaven;0.0;0.0;1
-Aldingen;0.0;0.0;5
-Nersingen;0.0;0.0;1
-Brieselang;0.0;0.0;1
-Neunkirchen;0.0;0.0;1
-Wüsting;0.0;0.0;1
-Nordkirchen;0.0;0.0;3
-Witten;0.0;0.0;1
-Lenting;0.0;0.0;1
-Luxembourg;0.0;0.0;4
-Herzogenaurach;0.0;0.0;1
-Teltow;0.0;0.0;1
-Langen;0.0;0.0;1
-Stollberg;0.0;0.0;4
-Radolfzell;0.0;0.0;1
-Weener;0.0;0.0;1
-Dornbirn;0.0;0.0;1
-Burglengenfeld;0.0;0.0;1
-Ismaning;0.0;0.0;1
-Wiesloch;0.0;0.0;1
-Stuhr;0.0;0.0;1
-Worms;0.0;0.0;1
-Salzgitter;0.0;0.0;5
-Oberhaching;0.0;0.0;1
-Westerstede;0.0;0.0;1
-Gräfelfing;0.0;0.0;3
-Neu-Ulm;0.0;0.0;2
-Chennai;0.0;0.0;2
-Prag;0.0;0.0;1
-Österreich;0.0;0.0;1
-Schäftlarn;0.0;0.0;1
-Heidenheim an der Brenz;0.0;0.0;1
-Kelkheim;0.0;0.0;1
-Schweiz;0.0;0.0;1
-Riyadh;0.0;0.0;1
-Kingdom of Saudi Arabia;0.0;0.0;1
-Heusweiler;0.0;0.0;1
-Bad Homburg;0.0;0.0;5
-Dudelange;0.0;0.0;1
-Prague;0.0;0.0;1
-Dartford;0.0;0.0;1
-Vorarlberg;0.0;0.0;1
-International;0.0;0.0;1
-Kempten;0.0;0.0;1
-Friedberg;0.0;0.0;1
-Neuss;0.0;0.0;1
-Weeze;0.0;0.0;1
-Holzgerlingen;0.0;0.0;1
-Abensberg;0.0;0.0;2
-Meckenheim;0.0;0.0;2
-Leipheim;0.0;0.0;3
-Schwieberdingen;0.0;0.0;4
-Herrenberg;0.0;0.0;3
-Lohr am Main;0.0;0.0;3
-Raunheim;0.0;0.0;2
-Ludwigshafen;0.0;0.0;4
-Halle;0.0;0.0;5
-Dingolfing;0.0;0.0;1
-Altenholz;0.0;0.0;4
-Shanghai;0.0;0.0;9
-Petaling Jaya;0.0;0.0;1
-Changchun;0.0;0.0;5
-Penang;0.0;0.0;4
-Yokohama;0.0;0.0;1
-Wolfratshausen;0.0;0.0;1
-Bangalore;0.0;0.0;3
-Neumünster;0.0;0.0;1
-Fürstenfeldbruck;0.0;0.0;2
-Weinheim;0.0;0.0;1
-Waiblingen;0.0;0.0;1
-Monheim;0.0;0.0;1
-Weinsberg;0.0;0.0;1
-Würzburg;0.0;0.0;4
-Aulendorf;0.0;0.0;1
-Amberg;0.0;0.0;1
-Schwabmünchen;0.0;0.0;1
-Peine;0.0;0.0;1
-Rheinbach;0.0;0.0;1
-Mönsheim;0.0;0.0;1
-Dachau;0.0;0.0;1
-Villingen-Schwenningen;0.0;0.0;1
-Brandenburg an der Havel;0.0;0.0;1
-Bad Dürkheim;0.0;0.0;1
-Heidenheim;0.0;0.0;1
-Beckum;0.0;0.0;13
-Ennigerloh;0.0;0.0;3
-Titisee-Neustadt;0.0;0.0;2
-Neuruppin;0.0;0.0;2
-Bergkamen;0.0;0.0;2
-Lohmar;0.0;0.0;2
-Arnstadt;0.0;0.0;1
-Neustadt an der Aisch;0.0;0.0;3
-Rottenburg am Neckar;0.0;0.0;5
-Holzwickede;0.0;0.0;1
-Feldkirchen;0.0;0.0;4
-Greven;0.0;0.0;1
-Planegg;0.0;0.0;1
-Oederan;0.0;0.0;1
-Iserlohn;0.0;0.0;3
-Wiehl;0.0;0.0;5
-Attendorn;0.0;0.0;1
-Waldkirchen;0.0;0.0;2
-Walldürn;0.0;0.0;1
-Velbert;0.0;0.0;1
-Viernheim;0.0;0.0;1
-Tauberbischofsheim;0.0;0.0;1
-Baiersbronn;0.0;0.0;3
-Marl;0.0;0.0;1
-Jüchen;0.0;0.0;1
-Pfullendorf;0.0;0.0;1
-Vechta;0.0;0.0;1
-Traben-Trarbach;0.0;0.0;1
-Viechtach;0.0;0.0;2
-Offenbach am Main;0.0;0.0;2
-Friesoythe;0.0;0.0;1
-Malsch;0.0;0.0;1
-Schenefeld;0.0;0.0;1
-Eisenhüttenstadt;0.0;0.0;1
-Friedrichsdorf;0.0;0.0;2
-Wittlich;0.0;0.0;4
-Erding;0.0;0.0;1
-Löningen;0.0;0.0;1
-Zwickau;0.0;0.0;2
-Lüdenscheid;0.0;0.0;1
-Isernhagen;0.0;0.0;3
-Celle;0.0;0.0;3
-Schwanewede;0.0;0.0;3
-Reisbach;0.0;0.0;1
-Neuerburg;0.0;0.0;1
-Mylau;0.0;0.0;1
-Altdorf bei Nürnberg;0.0;0.0;1
-Sauerlach;0.0;0.0;1
-Bad Windsheim;0.0;0.0;1
-Horb am Neckar;0.0;0.0;1
-Schwerte;0.0;0.0;1
-Hagen;0.0;0.0;1
-Bornheim;0.0;0.0;1
-Grafing bei München;0.0;0.0;1
-Edenkoben;0.0;0.0;1
-Pfeffenhausen;0.0;0.0;2
-Seefeld;0.0;0.0;3
-Gmund am Tegernsee;0.0;0.0;1
-Bad Mergentheim;0.0;0.0;1
-Bobingen;0.0;0.0;1
-Legau;0.0;0.0;1
-Lampertheim;0.0;0.0;1
-Mainz am Rhein;0.0;0.0;1
-Hof;0.0;0.0;1
-Stahnsdorf;0.0;0.0;1
-Rudolstadt;0.0;0.0;1
-Rottweil;0.0;0.0;4
-Detmold;0.0;0.0;1
-Rosenheim;0.0;0.0;2
-Kolbermoor;0.0;0.0;1
-Bad Kreuznach;0.0;0.0;1
-Blankenhain;0.0;0.0;1
-Pirmasens;0.0;0.0;1
-Altdöbern;0.0;0.0;2
-Neustrelitz;0.0;0.0;2
-Engelskirchen;0.0;0.0;2
-Cloppenburg;0.0;0.0;1
-Korbach;0.0;0.0;1
-Wackersdorf;0.0;0.0;1
-Stadtbergen;0.0;0.0;1
-Bautzen;0.0;0.0;3
-Gummersbach;0.0;0.0;1
-Hermannsburg;0.0;0.0;1
-Eisenach;0.0;0.0;1
-Kreuztal;0.0;0.0;1
-Bad Oeynhausen;0.0;0.0;2
-Lippstadt;0.0;0.0;1
-Buxtehude;0.0;0.0;1
-Rellingen;0.0;0.0;1
-Geisenhausen;0.0;0.0;2
-Wülfrath;0.0;0.0;1
-Bruchsal;0.0;0.0;1
-Altenburg;0.0;0.0;16
-Kaarst;0.0;0.0;1
-Simmern;0.0;0.0;1
-Bad Dürrenberg;0.0;0.0;2
-Griesheim;0.0;0.0;2
-Castrop-Rauxel;0.0;0.0;6
-Sinzig;0.0;0.0;2
-Görlitz;0.0;0.0;4
-Neuburg an der Donau;0.0;0.0;2
-Speyer;0.0;0.0;2
-Dorsten;0.0;0.0;2
-Suhl;0.0;0.0;2
-Wildberg;0.0;0.0;1
-Glinde;0.0;0.0;1
-Erkrath;0.0;0.0;1
-Bergheim;0.0;0.0;1
+Nürnberg;0;0;71
+Berlin;0;0;330
+Konstanz;0;0;12
+Hannover;0;0;40
+Köln;0;0;100
+Hamburg;0;0;117
+München;0;0;392
+Stuttgart;0;0;226
+Frankfurt am Main;0;0;219
+Mannheim;0;0;44
+Braunschweig;0;0;9
+Darmstadt;0;0;17
+Karlsruhe;0;0;162
+Schwerin;0;0;2
+Düsseldorf;0;0;91
+Essen;0;0;71
+Neckarsulm;0;0;35
+Aurich;0;0;1
+Trier;0;0;17
+Offenburg;0;0;8
+Ettlingen;0;0;10
+Limburgerhof;0;0;9
+Mudersbach, Sieg;0;0;12
+Bonn;0;0;59
+Basel;0;0;2
+Leipzig;0;0;44
+Norderstedt;0;0;3
+Eschborn;0;0;8
+Tübingen;0;0;16
+Ravensburg;0;0;3
+Saarbrücken;0;0;12
+Leverkusen;0;0;10
+Erfurt;0;0;8
+Pforzheim;0;0;5
+Wolfsburg;0;0;26
+Kiel;0;0;8
+Augsburg;0;0;31
+Duisburg;0;0;7
+Bremen;0;0;21
+Wien;0;0;8
+Schierling;0;0;1
+Ludwigsburg;0;0;31
+Möglingen;0;0;1
+Kirchentellinsfurt;0;0;1
+Eberdingen;0;0;1
+Passau;0;0;12
+Lindau (Bodensee);0;0;5
+Obersulm;0;0;3
+Uhldingen-Mühlhofen;0;0;2
+Salem;0;0;2
+Bielefeld;0;0;11
+Münsterland;0;0;3
+Ruhrgebiet;0;0;3
+Weissach;0;0;4
+Franken;0;0;1
+Südthüringen;0;0;1
+Heilbronn;0;0;6
+Rostock;0;0;10
+Siegerland;0;0;1
+Willstätt;0;0;5
+Moosburg an der Isar;0;0;2
+Gießen;0;0;11
+Wiesbaden;0;0;20
+Böblingen;0;0;9
+Pfaffenhofen;0;0;1
+Rügen;0;0;1
+Leinfelden-Echterdingen;0;0;16
+Minden;0;0;1
+Heidelberg;0;0;14
+Boenen;0;0;1
+Landsberg am Lech;0;0;1
+Vorbeck;0;0;1
+Remscheid;0;0;2
+Mönchengladbach;0;0;1
+Rhein-Main-Gebiet;0;0;8
+Schwäbisch Hall;0;0;1
+Baden-Baden;0;0;6
+Dortmund;0;0;20
+Freiburg im Breisgau;0;0;3
+Immenstaad am Bodensee;0;0;3
+Jena;0;0;14
+Unterhaching;0;0;2
+Gescher;0;0;1
+Unterföhring;0;0;4
+Zürich;0;0;5
+Herdecke;0;0;1
+Chemnitz;0;0;6
+Langen bei Frankfurt;0;0;1
+Bad Homburg (Saar) vor der Höhe;0;0;3
+Homberg;0;0;1
+Martinsried;0;0;1
+Wimsheim;0;0;3
+Aachen;0;0;42
+Friedrichshafen;0;0;22
+Data Scientist Natural Language Processing;0;0;1
+Natural Language Processing;0;0;1
+Sankt Leon-Rot;0;0;2
+Forchheim;0;0;2
+Deutschland;0;0;128
+French;0;0;9
+Renningen;0;0;41
+Oberpfaffenhofen;0;0;2
+Mainz;0;0;13
+Jülich;0;0;5
+Fokus auf gesundheitsbezogene Informationen;0;0;1
+Bad Neustadt an der Saale;0;0;9
+Ingolstadt;0;0;54
+Ludwigshafen am Rhein;0;0;5
+Leonberg;0;0;4
+Customer Management (m/w/d);0;0;1
+Freigericht;0;0;5
+Large Plants;0;0;1
+Zuffenhausen;0;0;4
+Probabilistic graphical models for Multi-agent systems;0;0;1
+SISW;0;0;1
+Power Generation & Power Markets;0;0;1
+Potsdam;0;0;7
+Technology Field "Software and Systems Innovation";0;0;1
+Guxhagen;0;0;1
+Financial Applications;0;0;1
+Technische Universität München;0;0;1
+Speech Recognition;0;0;1
+Voice Recognition im Customer Identity & Access Management System (CIAM);0;0;1
+months' contract;0;0;1
+German Localisation;0;0;1
+Neuhausen;0;0;10
+Flughafen München;0;0;7
+Wadern;0;0;7
+Mettlach;0;0;7
+Reutlingen;0;0;15
+Brandenburg;0;0;8
+Hildesheim;0;0;33
+Plochingen;0;0;4
+Fürth;0;0;10
+Feuerbach;0;0;10
+Weismain;0;0;7
+Freiburg;0;0;9
+Kreuzau;0;0;2
+Magdeburg;0;0;16
+Erlangen;0;0;26
+Krefeld;0;0;9
+Haar;0;0;10
+Markgröningen;0;0;2
+Waldkirch;0;0;8
+Mülheim an der Ruhr;0;0;6
+Chemikalienund Produktsicherheit;0;0;1
+Chemikalienund Produktsicherheit (m/w/d);0;0;1
+Halle (Saale);0;0;9
+Nürtingen;0;0;4
+Willich;0;0;2
+Digitalisierung;0;0;2
+Sindelfingen;0;0;10
+Bochum;0;0;9
+Neuhausen auf den Fildern;0;0;1
+Marpingen;0;0;1
+Landshut;0;0;4
+Tuttlingen;0;0;1
+Bitburg;0;0;1
+Ibbenbüren;0;0;2
+Digitalisierung von Multi-Channel-Korrespondenzen;0;0;1
+Schleswig-Holstein;0;0;3
+Bauaufsicht, Denkmalschutz und Immissionsschutz;0;0;1
+Laupheim;0;0;1
+Trierweiler;0;0;2
+Wetzlar;0;0;2
+Herford;0;0;1
+Innovation & Digitalisierung;0;0;1
+Regensburg;0;0;26
+Lollar;0;0;2
+Schwarzheide;0;0;5
+Bayern;0;0;1
+Ditzingen;0;0;3
+Marktheidenfeld;0;0;1
+Baar;0;0;2
+OCR (m/w);0;0;1
+Wuppertal;0;0;8
+Münster;0;0;22
+Sankt Augustin;0;0;5
+Fritzlar;0;0;1
+Lehre;0;0;1
+Fakultät Gestaltung;0;0;2
+Crailsheim;0;0;9
+Kassel;0;0;10
+Bad Nauheim;0;0;9
+Bühl;0;0;4
+Lingen;0;0;2
+Memmingen;0;0;2
+Bamberg;0;0;21
+Paderborn;0;0;7
+Deep Learning Specialist;0;0;2
+Kemnath;0;0;1
+University Students;0;0;2
+Tech;0;0;1
+Cottbus;0;0;1
+Home Based;0;0;1
+Data Mining (m/f/d);0;0;1
+Sprachdialogsysteme;0;0;1
+Information Designer;0;0;1
+Dresden;0;0;19
+Controlling and Finance Audit (CF A);0;0;1
+Biberach an der Riß;0;0;2
+Data Engineer;0;0;1
+Niederrhein;0;0;1
+Donauwörth;0;0;1
+Entwicklungsund Beratungshaus sucht Junior Data Scientist (m/w);0;0;1
+fachliches Backend (m/w/d);0;0;1
+Informationstechnik (BA);0;0;1
+Risikomodelle und Regulatorik;0;0;1
+Forensic Data Analytics;0;0;1
+Advanced Analytics (m/w) in Stuttgart;0;0;1
+Rödinghausen;0;0;1
+KI, Scien. Cloud Develop.,Trend Antenna FFM (m/w/divers);0;0;1
+Data Scientist (m, w) in Nürnberg gesucht;0;0;1
+Innovative Technology (AI & Big Data);0;0;1
+Oberhausen;0;0;7
+Big Data, Analytics and Artificial Intelligence (m/f/x);0;0;1
+Anwendungsberater/in;0;0;1
+Oldenburg;0;0;5
+Erbach;0;0;2
+Homburg (Saar);0;0;1
+Limburg an der Lahn;0;0;3
+Junior Managers Program;0;0;1
+Thalfang;0;0;1
+Start: ./. Quartal;0;0;1
+Beschaffung Travel Management;0;0;8
+Schweinfurt;0;0;6
+Neu-Isenburg;0;0;1
+Schwerpunkt Geschichte;0;0;1
+Marburg;0;0;4
+Bayreuth;0;0;13
+englische Fassung;0;0;9
+Bottrop;0;0;1
+Eggenstein-Leopoldshafen;0;0;7
+Machine Learning;0;0;7
+Data Scientist (m/w);0;0;6
+Lübeck;0;0;1
+Rodgau;0;0;1
+Aerzen;0;0;1
+Kaiserslautern;0;0;7
+Achim;0;0;1
+Bietigheim-Bissingen;0;0;1
+Buchbach;0;0;1
+Ulm;0;0;13
+Senior Machine Translation R&D Scientist;0;0;1
+Flensburg;0;0;5
+Dutch;0;0;1
+Lichtenfels;0;0;1
+English;0;0;1
+Zalando Lounge;0;0;1
+Deutsch (m/f/d);0;0;1
+Machine Learning (m/f);0;0;1
+Interior Sensing (m/f);0;0;1
+MACHINE LEARNING;0;0;1
+Langenfeld;0;0;3
+Bremerhaven;0;0;1
+Machine Learning (m/w);0;0;1
+Krakau;0;0;1
+Ingelheim am Rhein;0;0;1
+Gaimersheim;0;0;1
+Nördlingen;0;0;1
+Mülheim;0;0;1
+Heiligenhaus;0;0;2
+Untertürkheim;0;0;1
+Maschinelles Lernen für Signalverarbeitung;0;0;1
+Maschinelles Lernen in der Felddatenauswertung;0;0;1
+Frankenthal (Pfalz);0;0;3
+Maschinelles Lernen für Ubiquitous Computing (AreaHead);0;0;1
+Maschinelles Lernen, Mustererkennung und Bildverarbeitung;0;0;1
+Data Scientist / Data Engineer;0;0;1
+Aalen;0;0;3
+Landau;0;0;1
+Saalfeld / Saale;0;0;1
+Lohfelden;0;0;1
+Hamm;0;0;3
+Dübendorf;0;0;2
+Sonneberg;0;0;1
+Bad Honnef;0;0;1
+Innsbruck;0;0;1
+Meerbusch;0;0;1
+N.A.;0;0;186
+Paris;0;0;1
+Marbach am Neckar;0;0;1
+Osnabrück;0;0;3
+Sinsheim;0;0;2
+Wesel;0;0;1
+Göttingen;0;0;3
+Gera;0;0;2
+London;0;0;1
+Cyprus;0;0;1
+Weimar;0;0;1
+Bern;0;0;1
+Graz;0;0;3
+Gifhorn;0;0;19
+Walldorf;0;0;5
+Deutschland (Home Office), Österreich (Home Office);0;0;2
+Graben;0;0;1
+Emden;0;0;1
+Fellbach;0;0;1
+Landsberg;0;0;1
+GroßKarlsruhe;0;0;1
+Wachtberg;0;0;2
+Gaggenau;0;0;1
+Tamm;0;0;3
+Hanau;0;0;3
+Lingen (Ems);0;0;1
+Markdorf;0;0;1
+Bad Pyrmont;0;0;1
+Lüneburg;0;0;3
+Naumburg;0;0;1
+Fladungen;0;0;1
+Weissach-Flacht;0;0;1
+Hörstel-Bevergern;0;0;1
+Linz;0;0;1
+Potsdamer Umland;0;0;1
+GroßKassel;0;0;1
+Bargteheide;0;0;1
+Vesterling AG;0;0;1
+Gütersloh;0;0;4
+Harsewinkel;0;0;1
+Steinheim;0;0;1
+Mühldorf am Inn;0;0;1
+Bad Iburg;0;0;1
+Nordhessen;0;0;1
+Weiden;0;0;1
+Taufkirchen (Vils);0;0;1
+Eppingen;0;0;1
+Durach;0;0;1
+Büddenstedt;0;0;1
+Rastatt;0;0;1
+GroßOsnabrück;0;0;1
+Rödermark;0;0;1
+Toulouse;0;0;1
+Deggendorf;0;0;1
+Erligheim;0;0;1
+Pune;0;0;1
+Ottobrunn;0;0;1
+Koblenz;0;0;2
+Ratingen;0;0;2
+Weingarten;0;0;1
+Quickborn;0;0;2
+Geesthacht;0;0;2
+Ritzersdorf;0;0;1
+Linnich;0;0;1
+Fellbach Baden;0;0;2
+Wilhelmshaven;0;0;1
+Aldingen;0;0;3
+Nersingen;0;0;1
+Brieselang;0;0;1
+Moenchengladbach;0;0;1
+Neunkirchen;0;0;1
+Wüsting;0;0;1
+Nordkirchen;0;0;1
+Witten;0;0;1
+Lenting;0;0;1
+Fulda;0;0;1
+Luxembourg;0;0;4
+Hochheim am Main;0;0;1
+Bad Homburg vor der Höhe;0;0;3
+Bornheim;0;0;1
+Herzogenaurach;0;0;1
+Großenkneten;0;0;1
+Teltow;0;0;1
+Langen;0;0;1
+Affalterbach;0;0;2
+Luxemburg;0;0;1
+Kirchdorf an der Iller;0;0;1
+Höri;0;0;1
+Hermannstadt;0;0;1
+Stollberg;0;0;3
+Rosenheim;0;0;2
+Putzbrunn;0;0;1
+HOSINGEN;0;0;1
+Aichtal;0;0;1
+Würzburg;0;0;4
+Radolfzell;0;0;1
+Weener;0;0;1
+Dornbirn;0;0;1
+Friedberg (Hessen);0;0;1
+Burglengenfeld;0;0;1
+Ismaning;0;0;1
+Wiesloch;0;0;1
+Stuhr;0;0;1
+Unterschleißheim;0;0;2
+Worms;0;0;1
+Salzgitter;0;0;5
+IAV GmbH Ingenieurgesellschaft Auto und Verkehr;0;0;1
+Oberhaching;0;0;1
+Westerstede;0;0;1
+Gräfelfing;0;0;2
+Neu-Ulm;0;0;2
+Vorarlberg;0;0;2
+Heerbrugg;0;0;2
+Chennai;0;0;1
+Werkstudent Bereich Immobilien (m/w) Projektmanagement & Analyse einer Kaufpreissammlung;0;0;1
+Prag;0;0;1
+Österreich;0;0;1
+Schäftlarn;0;0;1
+Heidenheim an der Brenz;0;0;1
+Kelkheim;0;0;1
+Schweiz;0;0;1
+Riyadh;0;0;1
+Kingdom of Saudi Arabia;0;0;1
+Heusweiler;0;0;1
+Bad Homburg (Saar);0;0;5
+Dudelange;0;0;1
+Strassen;0;0;1
+Prague;0;0;1
+Dartford;0;0;1
+International;0;0;1
+Kempten;0;0;1
+Friedberg;0;0;1
+Deutschland (Home Office);0;0;2
+Neuss;0;0;1
+Weeze;0;0;1
+Holzgerlingen;0;0;1
+Abensberg;0;0;2
+Meckenheim;0;0;2
+Albstadt;0;0;2
+Leipheim;0;0;3
+Abstatt;0;0;11
+Schwieberdingen;0;0;4
+Herrenberg;0;0;3
+Lohr am Main;0;0;3
+Gerlingen;0;0;1
+Aschheim;0;0;5
+Lüdenscheid;0;0;1
+Raunheim;0;0;2
+Zentrale Wermelskirchen;0;0;7
+deutschlandweit;0;0;9
+Waiblingen;0;0;15
+Ludwigshafen;0;0;4
+Auerbach in der Oberpfalz;0;0;4
+Halle;0;0;5
+Dingolfing;0;0;1
+Altenholz;0;0;3
+Hummelsbüttel;0;0;1
+San Luis Potosi;0;0;11
+Shanghai;0;0;9
+Petaling Jaya;0;0;1
+Weiherhammer;0;0;1
+Changchun;0;0;5
+Penang;0;0;4
+Yokohama;0;0;1
+Pangyo;0;0;1
+Wolfratshausen;0;0;1
+VeszprÃ©m;0;0;2
+Bangalore;0;0;3
+Neumünster;0;0;1
+Fürstenfeldbruck;0;0;2
+Bad Rodach;0;0;2
+Weinheim;0;0;1
+Monheim;0;0;1
+Kusterdingen;0;0;3
+Weinsberg;0;0;1
+Aulendorf;0;0;1
+Amberg;0;0;1
+Schwabmünchen;0;0;1
+Peine;0;0;1
+Iasi;0;0;2
+Rheinbach;0;0;1
+Mönsheim;0;0;1
+PHOENIX CONTACT in Blomberg;0;0;4
+PHOENIX CONTACT Electronics in Bad Pyrmont;0;0;1
+PHOENIX CONTACT Connector Technology in Herrenberg;0;0;1
+PHOENIX CONTACT E-Mobility in Schieder;0;0;2
+Dachau;0;0;2
+Wuppertal-Elberfeld;0;0;2
+Villingen-Schwenningen;0;0;1
+Brandenburg an der Havel;0;0;1
+Bad Dürkheim;0;0;1
+Heidenheim;0;0;1
+Beckum;0;0;13
+Ennigerloh;0;0;3
+Muehlacker;0;0;1
+Rottenburg am Neckar;0;0;3
+Waldkirchen;0;0;1
+Egelsbach, Hessen;0;0;1
+Iserlohn;0;0;2
+Viechtach;0;0;1
+Neustadt an der Aisch;0;0;2
+Leer (Ostfriesland);0;0;1
+Friedrichsdorf;0;0;1
+Kempten (Allgäu);0;0;1
+Isernhagen;0;0;1
+Remshalden;0;0;2
+Celle;0;0;1
+Heusenstamm;0;0;1
+Gemmingen;0;0;1
+Schwanewede;0;0;1
+Altenburg;0;0;11
+Rottweil;0;0;1
+Feldkirchen;0;0;1
+Eberstadt;0;0;1
+Griesheim;0;0;1
+Burgkirchen an der Alz;0;0;2
+Castrop-Rauxel;0;0;3
+Sinzig;0;0;1
+Rockenberg;0;0;2
+Görlitz;0;0;2
+Oberasbach bei Nürnberg;0;0;1
+Herschweiler-Pettersheim;0;0;2
+Neuburg an der Donau;0;0;1
+Langenfeld (Rheinland);0;0;1
+Speyer;0;0;2
+Dorsten;0;0;1
+Seeheim-Jugenheim;0;0;2
+Meißen;0;0;1
+Lachen;0;0;1
+Winnenden;0;0;1
+Halle (Saale);0;0;9

@@ -36,7 +36,8 @@ for x in jobs_ohne_dublikate:
         count_CL = CL_jobs.count(x)
         count_DH = DH_jobs.count(x)
         count_jobs = jobs.count(x)
-        output_token = x+';'+str(count_CL)+';'+str(count_DH) +';'+ str(count_jobs)
+        output_token = x+';0;0;'+str(count_jobs)
+        #output_token = x+';'+str(count_CL)+';'+str(count_DH) +';'+ str(count_jobs)
         output.append(output_token)
         
     i+=1

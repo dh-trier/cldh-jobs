@@ -26,8 +26,8 @@ import folium
 
 jobsdatafile = join("data", "cities-and-jobs.csv")
 geodatafile = join("data", "geo-de-org.csv")
-mapfile = join("plots", "jobmap4.html")
-mapstyle = "Stamen Toner" # "Open Street Map" | "Stamen Watercolor" | "Stamen Terrain" | "Stamen Toner"
+mapfile = join("plots", "jobmap_10.03.2019.html")
+mapstyle = "Open Street Map" # "Stamen Toner" | "Stamen Watercolor" | "Stamen Terrain" | "Stamen Toner"
 
 
 # == functions == 
